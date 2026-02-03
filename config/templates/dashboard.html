@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Cyber - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .score-high { color: #dc3545; font-weight: bold; } /* Rouge pour critique */
+        .score-medium { color: #fd7e14; font-weight: bold; } /* Orange */
+        body { background-color: #f8f9fa; }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>🛡️ Tableau de Bord Vulnerabilités</h1>
+            <span class="badge bg-primary fs-5">{{ vulnerabilites|length }} CVE détectées</span>
+        </div>
+
+        <div class="card shadow">
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>CVE ID</th>
+                            <th>Produit</th>
+                            <th>Score CVSS</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for v in vulnerabilites %}
+                        <tr>
+                            <td><code>{{ v.cve_id }}</code></td>
+                            <td>{{ v.produit }}</td>
+                            <td class="{% if v.cvss >= 7 %}score-high{% else %}score-medium{% endif %}">
+                                {{ v.cvss }}
+                            </td>
+                            <td>{{ v.description|truncatewords:20 }}</td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="4" class="text-center">Aucune donnée disponible. Lancez <code>python manage.py actualiser</code></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

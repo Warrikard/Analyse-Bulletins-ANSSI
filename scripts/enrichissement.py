@@ -33,10 +33,8 @@ def enrichir_cve(cve_id):
                 info["Base Severity"] = cvss.get("baseSeverity", "N/A")
         except:
             pass
-        try:
-            problemtype = adp[0].get("problemTypes") or cna.get("problemTypes")
-        except:
-            pass
+
+        problemtype = adp[0].get("problemTypes") or cna.get("problemTypes")
 
         try:
             info["CWE"] = problemtype[0]["descriptions"][0].get("cweId", "Non disponible")
