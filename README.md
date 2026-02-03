@@ -81,7 +81,7 @@ Pour gérer l'interface web indépendamment de l'extraction :
 Ouvrir VS Code et lancez le fichier notebooks/analyse_data.ipynb.
 
 -> Sélectionnez le kernel .venv .
--> Exécutez toutes les cellules pour générer les graphiques et le fichier html.
+-> Exécutez toutes les cellules pour générer les graphiques et le fichier HTML.
 
 ## Visualisation du Dashboard
 En local : Accédez à http://127.0.0.1:8000/dashboard/
