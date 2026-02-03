@@ -6,7 +6,8 @@ Projet de Veille Cyber : Automatisation ANSSI & Enrichissement CVE
 Ce projet automatise la collecte, l'enrichissement et l'analyse des avis et alertes de sécurité publiés par l'ANSSI (CERT-FR). Il identifie les CVE, les enrichit via les API MITRE et FIRST (EPSS), consolide les données dans un fichier CSV et génère des alertes pour les vulnérabilités critiques. On importe les données dans un fichier SQLite via Django qui génère un dashboard web interactif pour la surveillance des vulnérabilités critiques.
 
 ## Architecture du Projet
-PROJET_IA_ANSSI/
+
+    ```bash
 PROJET_IA_ANSSI/
 ├── data/                   # Fichier CSV final (donnees.csv)
 ├── exports/                # Export HTML du Notebook pour le rendu
@@ -30,6 +31,7 @@ PROJET_IA_ANSSI/
 ├── main.py                 # Script d'exécution global (Pipeline + Django)
 ├── requirements.txt        # Dépendances (Django, Pandas, Requests)
 └── README.md               # Documentation
+    ```
 
 ## Installation (Debian 13)
 
