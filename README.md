@@ -7,7 +7,7 @@ Ce projet automatise la collecte, l'enrichissement et l'analyse des avis et aler
 
 ## Architecture du Projet
 
-    ```bash
+```bash
 PROJET_IA_ANSSI/
 ├── data/                   # Fichier CSV final (donnees.csv)
 ├── exports/                # Export HTML du Notebook pour le rendu
@@ -31,7 +31,7 @@ PROJET_IA_ANSSI/
 ├── main.py                 # Script d'exécution global (Pipeline + Django)
 ├── requirements.txt        # Dépendances (Django, Pandas, Requests)
 └── README.md               # Documentation
-    ```
+```
 
 ## Installation (Debian 13)
 
