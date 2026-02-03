@@ -86,7 +86,6 @@ En local : Accédez à http://127.0.0.1:8000/dashboard/
 
 Espace Virtuel (GitHub Codespaces) : 1. Cliquez sur le pop-up "Open in Browser" qui apparaît lors du lancement du serveur. 2. Ajoutez /dashboard/ à la fin de l'URL générée. Exemple : https://votre-id-8000.app.github.dev/dashboard/
 
-
 ## Fonctionnalités Implémentées
 Extraction Multi-Flux : Lecture simultanée des Avis et des Alertes.
 
@@ -97,8 +96,6 @@ Analyse de Criticité : Consolidation par bulletin en retenant la vulnérabilit�
 Système d'Alerte : Détection automatique des menaces avec un score CVSS >= 9.0.
 
 Dashboard Interactif : Visualisation web des vulnérabilités triées par score via API Django.
-
-
 
 ## Équipe
     Mike CUNHA
