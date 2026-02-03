@@ -1,0 +1,7 @@
+feedparser
+requests
+pandas
+matplotlib
+seaborn
+jinja2
+django
