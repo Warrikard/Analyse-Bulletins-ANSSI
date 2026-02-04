@@ -13,10 +13,10 @@ PROJET_IA_ANSSI/
 ├── exports/                # Export HTML du Notebook pour le rendu
 ├── notebooks/              # Notebook d'analyse et visualisations
 ├── scripts/                # Modules Python métier
-│   ├── extraction.py      # Récupère les flux RSS/JSON du CERT-FR.
-│   ├── enrichissement.py  # Interroge les API NIST/FIRST (CVSS/EPSS).
-│   ├── consolidation.py   # Formate les données pour l'analyse.
-│   └── alertes.py         # Filtrage des failles et notifications.
+│   ├── extraction.py       # Récupère les flux RSS/JSON du CERT-FR.
+│   ├── enrichissement.py   # Interroge les API NIST/FIRST (CVSS/EPSS).
+│   ├── consolidation.py    # Formate les données pour l'analyse.
+│   └── alertes.py          # Filtrage des failles et notifications.
 ├── config/                 # Application Django (Cœur du projet)
 │   ├── management/         # Commandes personnalisées (ex: python manage.py actualiser)
 │   ├── templates/          # Interface HTML (dashboard.html)
