@@ -5,9 +5,9 @@ import pandas as pd
 def send_email(to_email, subject, df_critiques):
     # --- CONFIGURATION ---
     #from_email = "votre_email@gmail.com"
-    from_email = "mike.cunha@edu.esiee.fr"
+    from_email = "mail_diffusion@gmail.com"
     #password = "votre_mot_de_passe_application"  # 16 caractères de Google
-    password = "lezwvvxndohvsgdk"
+    password = "mdp_app_mail_diffusion"
 
 
     # 1. Préparation du texte de l'email
@@ -48,7 +48,7 @@ def filtrer_critiques(df, seuil):
     
     if not critiques.empty:
         print(f"⚠️ {len(critiques)} failles critiques trouvées !")
-        send_email("mike.cunha@edu.esiee.fr", "Test Alerte Sécurité", critiques)
+        send_email("destinataire@gmail.com", "Test Alerte Sécurité", critiques)
     else:
         print("✅ Aucune faille au dessus du seuil.")
     return critiques

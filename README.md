@@ -56,6 +56,11 @@ PROJET_IA_ANSSI/
     ```
 ## Utilisation
 1. **Extraction et Consolidation :**
+Avant tout, afin de recevoir les notifications par mail, modifier dans les champs du fichier "alerte.py":
+    - l'adresse mail qui envoie le mail (ligne 8)
+    - le mot de passe d'application, se trouvant dans les paramètres de sécurité du compte Google (ligne 10)
+    - l'adresse mail de la personne à laquelle le mail est destiné (ligne 51)
+
 Lancez le script principal pour récupérer les données et générer le fichier CSV :
 
     ```bash
